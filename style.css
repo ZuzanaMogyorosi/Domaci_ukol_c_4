@@ -1,0 +1,112 @@
+body {
+    margin: 16px 32px;
+    font-family: "Roboto", sans-serif ;
+}
+
+@media (max-width: 768px) {
+    body {
+        margin: 8px;
+    }
+
+}
+
+nav {
+    background-color: #F08D8F;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 8px;
+    margin-bottom: 10px
+
+}
+
+
+nav a {
+    text-decoration: none;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.icon {
+width: 30px;
+height: 25px;
+display: none;
+margin-left: auto;
+/*padding: 8px; bylo psáno v zadání, ale jelikož jsem si ikonu stáhla a asi se chová jinak, tak jsem padding zakomentovala a teď mi příjde, že mi to funguje lépe*/
+}
+
+
+.icon img{
+    width: 100%;
+    height: 100%;
+    
+}
+
+@media screen and (max-width: 768px) {
+    .icon {
+    display: block;
+    
+    }
+    nav a {
+    display: none;
+    }
+}
+
+.hero-section {background-image: url(./Obrazky/Voda.jpeg); 
+    height: 70vh;
+    object-fit: contain;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+    margin-bottom: 24px;
+    position: relative;
+
+
+}
+
+.hero-text {
+    color: white;
+    position: absolute;
+    bottom: 16px;
+    left: 32px;
+
+
+}
+
+.hero-subtitle {
+    font-size: 20px;
+
+}
+
+@media (max-width: 768px) {
+    .hero-subtitle {
+        font-size: 18px;
+}
+}
+    .hero-title {
+        margin-top: 8px;
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 24px;
+    }
+}
+    .image-container {
+        width: 50%;
+}
+
+@media (max-width: 768px) {
+    .image-container {
+        width: 100%;
+    }
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+}
